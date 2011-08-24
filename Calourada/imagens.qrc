@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="on">green-led-on-md.png</file>
+        <file alias="off">red-led-on-md.png</file>
+        <file>engine_laws.gif</file>
+    </qresource>
+</RCC>

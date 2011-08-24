@@ -1,0 +1,297 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>SerialPort</class>
+ <widget class="QDialog" name="SerialPort" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>181</width>
+    <height>223</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Open Serial</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="4" column="1" >
+    <widget class="QComboBox" name="chooseStopBits" >
+     <item>
+      <property name="text" >
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>1.5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>2</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <widget class="QComboBox" name="chooseDataBits" >
+     <property name="currentIndex" >
+      <number>3</number>
+     </property>
+     <item>
+      <property name="text" >
+       <string>5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>8</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="labelPort" >
+     <property name="text" >
+      <string>Port</string>
+     </property>
+     <property name="buddy" >
+      <cstring>labelPort</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" >
+    <widget class="QComboBox" name="chooseFlowControl" >
+     <item>
+      <property name="text" >
+       <string>Off</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Hardware</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Xon/Xoff</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QComboBox" name="chooseBaudRate" >
+     <property name="currentIndex" >
+      <number>3</number>
+     </property>
+     <item>
+      <property name="text" >
+       <string>9600</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>19200</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>38400</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>57600</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>115200</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QLabel" name="labelBaudRate" >
+     <property name="text" >
+      <string>Baud Rate</string>
+     </property>
+     <property name="buddy" >
+      <cstring>labelPort</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QComboBox" name="choosePort" >
+     <item>
+      <property name="text" >
+       <string>COM1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>COM2</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="5" column="0" >
+    <widget class="QLabel" name="labelFlowControl" >
+     <property name="text" >
+      <string>Flow Control</string>
+     </property>
+     <property name="buddy" >
+      <cstring>labelPort</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" >
+    <widget class="QLabel" name="labelStopBits" >
+     <property name="text" >
+      <string>Stop Bits</string>
+     </property>
+     <property name="buddy" >
+      <cstring>labelPort</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QLabel" name="labelDataBits" >
+     <property name="text" >
+      <string>Data Bits</string>
+     </property>
+     <property name="buddy" >
+      <cstring>labelPort</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" >
+    <widget class="QLabel" name="labelParity" >
+     <property name="text" >
+      <string>Parity</string>
+     </property>
+     <property name="buddy" >
+      <cstring>labelPort</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" >
+    <widget class="QComboBox" name="chooseParity" >
+     <item>
+      <property name="text" >
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Odd</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Even</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Mark</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Space</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="openButton" >
+       <property name="text" >
+        <string>Open</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton" >
+       <property name="text" >
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>choosePort</tabstop>
+  <tabstop>chooseBaudRate</tabstop>
+  <tabstop>chooseDataBits</tabstop>
+  <tabstop>chooseParity</tabstop>
+  <tabstop>chooseStopBits</tabstop>
+  <tabstop>chooseFlowControl</tabstop>
+  <tabstop>openButton</tabstop>
+  <tabstop>cancelButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>openButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SerialPort</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>91</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>96</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SerialPort</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>174</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>179</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
